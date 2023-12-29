@@ -6,7 +6,7 @@ Yunicomba provides a REST API for conversion between common units of measurement
 
 ## Prerequisites
 
-Yunicomba is written in the [Ruby programming language](https://ruby-lang.org/) and uses the [Sinatra](https://sinatrarb.com) microframework. The system where you run Yunicomba must provide the following software.
+Yunicomba is written in the [Ruby programming language](https://ruby-lang.org/) and uses the [Sinatra](https://sinatrarb.com) microframework. The system where you run Yunicomba must provide the following software, as well as any dependencies.
 
 | Software | Version | More information |
 | :- | :- | :- |
