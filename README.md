@@ -66,6 +66,8 @@ Requests require all of the following key-value pairs as JSON data.
 | `source_unit` | String | Source unit of source value for conversion to target unit. |
 | `target_unit` | String | Target unit for conversion of source value from source unit. |
 
+Yunicomba's response to a well-formed request includes `target_value`, which contains the converted source value.
+
 If you omit a key in your request, Yunicomba responds with a `400`, and `error.details` provides a list of missing keys.
 
 ## Example
