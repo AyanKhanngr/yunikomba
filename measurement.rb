@@ -21,13 +21,11 @@ class Measurement
     ].flatten,
 
     'volume' => [
-      # Imperial
-
-      %w[fluid_ounces pints quarts gallons],
-
       # Metric
+      %w[milliliters liters],
 
-      %w[milliliters liters]
+      # Imperial
+      %w[fluid_ounces pints quarts gallons]
     ].flatten
   }.freeze
 
