@@ -1,12 +1,12 @@
-# YUNICOMBA • ユニコンバ
+# YUNIKOMBA • ユニコンバ
 
 ## Overview
 
-Yunicomba provides a REST API for conversion between common units of measurement. Yunicomba accepts requests with a JSON payload and responds with JSON.
+Yunikomba provides a REST API for conversion between common units of measurement. Yunikomba accepts requests with a JSON payload and responds with JSON.
 
 ## Prerequisites
 
-Yunicomba is written in the [Ruby programming language](https://ruby-lang.org/) and uses the [Sinatra](https://sinatrarb.com) microframework. The system where you run Yunicomba must provide the following software, as well as any dependencies.
+Yunikomba is written in the [Ruby programming language](https://ruby-lang.org/) and uses the [Sinatra](https://sinatrarb.com) microframework. The system where you run Yunikomba must provide the following software, as well as any dependencies.
 
 | Software | Version | More information |
 | :- | :- | :- |
@@ -15,13 +15,13 @@ Yunicomba is written in the [Ruby programming language](https://ruby-lang.org/) 
 
 ## Getting started
 
-Start Yunicomba by running the following command.
+Start Yunikomba by running the following command.
 
 ```
-ruby yunicomba.rb -e production
+ruby yunikomba.rb -e production
 ```
 
-By default, Yunicomba runs on port 80 and does not implement or require TLS.
+By default, Yunikomba runs on port 80 and does not implement or require TLS.
 
 ## Endpoints
 
@@ -35,7 +35,7 @@ By default, Yunicomba runs on port 80 and does not implement or require TLS.
 
 #### `GET /about`
 
-Provides a list of Yunicomba's available endpoints. Alternatively, you can submit a `GET` request to `/`.
+Provides a list of Yunikomba's available endpoints. Alternatively, you can submit a `GET` request to `/`.
 
 ### `/convert/units`
 
@@ -43,7 +43,7 @@ Provides a list of Yunicomba's available endpoints. Alternatively, you can submi
 
 #### `GET /convert/units`
 
-Provides a list of units that Yunicomba can convert.
+Provides a list of units that Yunikomba can convert.
 
 ### `/convert`
 
@@ -66,9 +66,9 @@ Requests require all of the following key-value pairs as JSON data.
 | `source_unit` | String | Source unit of source value for conversion to target unit. |
 | `target_unit` | String | Target unit for conversion of source value from source unit. |
 
-Yunicomba's response to a well-formed request includes `target_value`, which contains the converted source value.
+Yunikomba's response to a well-formed request includes `target_value`, which contains the converted source value.
 
-If you omit a key in your request, Yunicomba responds with a `400`, and `error.details` provides a list of missing keys.
+If you omit a key in your request, Yunikomba responds with a `400`, and `error.details` provides a list of missing keys.
 
 ## Example
 
