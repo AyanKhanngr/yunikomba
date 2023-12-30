@@ -11,8 +11,8 @@ end
 get %w(/ /about) do
   halt 200, {
     information: {
-      message: "Yunicomba provides the following endpoints: /about, /convert, /convert/units",
-      documentation_url: "https://github.com/mattpollard/yunicomba#endpoints"
+      message: "Yunikomba provides the following endpoints: /about, /convert, /convert/units",
+      documentation_url: "https://github.com/mattpollard/yunikomba#endpoints"
     }
   }.to_json
 end
@@ -29,7 +29,7 @@ get '/convert' do
   halt 200, {
     information: {
       message: "Use POST /convert to convert units or GET /convert/units to display supported units",
-      documentation_url: "https://github.com/mattpollard/yunicomba#endpoints"
+      documentation_url: "https://github.com/mattpollard/yunikomba#endpoints"
     }
   }.to_json
 end
